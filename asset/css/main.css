@@ -1,0 +1,16 @@
+#header {
+  background-color: #112240;
+  color: #fafafa;
+}
+#header a {
+  color: #fafafa;
+}
+#header-img {
+  background-image: url("../img/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#content > #second {
+  color: #fafafa;
+}
