@@ -5,6 +5,9 @@
 #header a {
   color: #fafafa;
 }
+#header button {
+  color: #fafafa;
+}
 #header-img {
   background-image: url("../img/background2.png");
   background-repeat: no-repeat;

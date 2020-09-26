@@ -4,13 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>LiveTask</title>
 </head>
@@ -18,27 +27,42 @@
 <body>
     <section id="header">
         <div id="header-img">
-            <header>
-                <div class="navbar">
-                    <div class="container d-flex justify-content-between">
+            <header class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="navbar-logo">
                         <a href="#" class="navbar-brand d-flex align-items-center">
                             <strong>LiveTask</strong>
                         </a>
-
-                        <div class="navbar">
-                            <a class="nav-item nav-link"href="#" onclick="scrollClick('about')">Why LiveTask?</a>
-                            <a class="nav-item nav-link" href="#" onclick="scrollClick('team')">Team</a>
-                            <button type="button" class="btn btn-outline-success">Pelajari Selengkapnya</button>
-                        </div>
-
                     </div>
-                </div>
+                    <label type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </label>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-item nav-link" href="#" onclick="scrollClick('about')">Why
+                                    LiveTask?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item nav-link" href="#" onclick="scrollClick('team')">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-success">Pelajari
+                                    Selengkapnya</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </header>
             <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-4 font-weight-normal">LiveTask</h1>
                     <p class="lead font-weight-normal">Create Your Own Portfolio With Your Project</p>
-                    <!-- <a class="btn btn-secondary" href="#"><span class="fa fa-apple"></span> App Store</a> -->
                     <button class="btn btn-outline-light btn-icon-text"> <i
                             class="fa fa-android btn-icon-prepend mdi-36px"></i> <span class="d-inline-block text-left">
                             <small class="font-weight-light d-block">Get it on the</small> Google Play </span> </button>
@@ -131,9 +155,8 @@
         <div class="row pb-5">
             <div class="col-lg-3 text-center">
                 <div class="p-3">
-                    <img class="rounded-circle grayscale"
-                        src="asset/img/imam.jpg"
-                        alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle grayscale" src="asset/img/imam.jpg" alt="Generic placeholder image"
+                        width="200" height="200">
                 </div>
                 <h3>Co-Founder</h3>
                 <p>Muhammad Imam Taufiq</p>
@@ -141,9 +164,8 @@
             </div>
             <div class="col-lg-3 text-center">
                 <div class="p-3">
-                    <img class="rounded-circle grayscale"
-                        src="asset/img/cua.jpg"
-                        alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle grayscale" src="asset/img/cua.jpg" alt="Generic placeholder image"
+                        width="200" height="200">
                 </div>
                 <h3>Co-Founder</h3>
                 <p>Yosua Kristianto</p>
@@ -151,9 +173,8 @@
             </div>
             <div class="col-lg-3 text-center">
                 <div class="p-3">
-                    <img class="rounded-circle grayscale"
-                        src="asset/img/made.jpg"
-                        alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle grayscale" src="asset/img/made.jpg" alt="Generic placeholder image"
+                        width="200" height="200">
                 </div>
                 <h3>Co-Founder</h3>
                 <p>Made Raja Adi</p>
@@ -161,9 +182,8 @@
             </div>
             <div class="col-lg-3 text-center">
                 <div class="p-3">
-                    <img class="rounded-circle grayscale"
-                        src="asset/img/hafiz.jpg"
-                        alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle grayscale" src="asset/img/hafiz.jpg" alt="Generic placeholder image"
+                        width="200" height="200">
                 </div>
                 <h3>Co-Founder</h3>
                 <p>Hafiz Bukhari</p>
