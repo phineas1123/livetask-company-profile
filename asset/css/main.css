@@ -45,3 +45,12 @@
   color: #fafafa;
   background-color: #33c17a;
 }
+#scroll-top {
+  background-color: #33c17a;
+  color: #fafafa;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border: none;
+  display: none;
+}
