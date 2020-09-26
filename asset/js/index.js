@@ -7,7 +7,8 @@ $(document).ready(function () {
     }
   });
   // scroll body to 0px on click
-  $("#scroll-top").click(function () {
+  $("#scroll-top").on("click", function () {
+    console.log("pressed");
     $("body,html").animate(
       {
         scrollTop: 0,
