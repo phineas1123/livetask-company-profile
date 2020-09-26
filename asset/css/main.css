@@ -11,6 +11,34 @@
   background-size: cover;
   background-position: center center;
 }
-#content > #second {
+#content {
+  /* color: #112240; */
+}
+
+#footer{
+  background-color: #112240;
   color: #fafafa;
+}
+
+.grayscale{
+  filter: grayscale(100%);
+}
+
+.btn-primary{
+  background-color: #112240;
+  color: #fafafa;
+}
+.btn-primary:hover{
+  background-color: #fafafa;
+  color: #112240;
+}
+
+.btn-outline-success{
+  border: 1px solid #33c17a;
+  color: #33c17a;
+  background-color: transparent;
+}
+.btn-outline-success:hover{
+  color: #fafafa;
+  background-color: #33c17a;
 }
